@@ -21,5 +21,5 @@ setup(
         platforms='POSIX',
         url='https://github.com/fr33jc/bang',
         install_requires=reqs,
-        scripts=['bin/bang'],
+        scripts=['bin/bang','bin/bang-dispatcher'],
         )

@@ -1,0 +1,16 @@
+---
+version: 1
+formatters:
+  default:
+    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+handlers:
+  file:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: default
+    filename: tests/resources/sqslistener/logs/sqs-listener.log
+loggers:
+  SQSListener:
+    level: DEBUG
+    handlers: [file]
+    propagate: no

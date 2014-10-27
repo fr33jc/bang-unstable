@@ -17,6 +17,11 @@ nose==1.1.2
 #     - License:  BSD 3-clause
 mock
 
+# moto
+#     - Mocking Library for Amazon Boto
+#     - License: Apache License, Version 2.0
+moto
+
 # OpenStack Client Libraries
 # --------------------------
 # These will *not* be part of the normal Bang distribution, but are included

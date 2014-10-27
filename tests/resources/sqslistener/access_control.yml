@@ -1,0 +1,26 @@
+---
+# Example of which access levels have access to which jobs.
+# Jobs can be accessed by more than one level.
+
+access_level_admin:
+- job_1
+- job_2
+- job_3
+- job_4
+- job_5
+- job_6
+- job_7
+- job_8
+
+access_level_dev:
+- job_3
+- job_4
+- job_5
+
+access_level_qa:
+- job_3
+- job_6
+- job_7
+
+access_level_test:
+- job_8

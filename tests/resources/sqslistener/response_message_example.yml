@@ -1,0 +1,6 @@
+---
+# Example
+job_name: test_job_1
+request_id: 1
+result: success
+message: Everything was A-OK

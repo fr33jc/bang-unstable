@@ -1,0 +1,9 @@
+---
+# A very simple bang-stack for testing the sqs listener calling bang
+name: Test
+
+version: 1.0
+
+playbooks:
+- test-ansible-playbook.yml
+

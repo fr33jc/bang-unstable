@@ -1,0 +1,9 @@
+---
+# Example
+example_user_name: example_admin_user_1
+  email: exampleuser@exampleemail.com
+  access_levels:
+    - access_level_admin
+    - access_level_dev
+    - access_level_qa
+    - access_level_test

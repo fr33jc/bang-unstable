@@ -1,0 +1,49 @@
+#!/usr/bin/env python
+# bang
+# ====
+#
+# Copyright 2012 - Brian J. Donohoe
+#
+# This file is part of bang.
+#
+# bang is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# bang is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with bang.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+import sys
+
+if len(sys.argv) < 2:
+    arg_path = None  # If None, it will use the default ~/.sqslistener
+else:
+    arg_path = sys.argv[1]
+
+# Copied and modified from bin/bang
+try:
+    import bang.sqslistener
+except ImportError:
+    # maybe we're running from a checkout
+    import os.path
+    BANG_SRC_DIR = os.path.abspath(
+        os.path.join(
+            os.path.dirname(__file__),
+            '..',
+            )
+        )
+    sys.path.insert(0, BANG_SRC_DIR)
+    import bang.sqslistener
+
+from bang.sqslistener.start_sqslistener import start_sqslistener
+
+
+if __name__ == '__main__':
+    start_sqslistener(configfile_path=arg_path)

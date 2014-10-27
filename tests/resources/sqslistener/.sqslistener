@@ -1,0 +1,7 @@
+---
+aws_region: us-east-1
+job_queue_name: bang-queue
+response_queue_name: bang-response
+polling_interval: 2
+jobs_config_path: tests/resources/sqslistener/jobs.yml
+logging_config_path: tests/resources/sqslistener/logging-conf.yml

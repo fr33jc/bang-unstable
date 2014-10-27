@@ -1,0 +1,10 @@
+---
+test_job_1:
+  bang-stacks:
+   - tests/resources/sqslistener/bang-stacks/test-bang-stack.yml
+test_job_2:
+  bang-stacks:
+   - /this/is/just/a/test2.yml
+test_job_3:
+  bang-stacks:
+   - /this/is/just/a/test3.yml
