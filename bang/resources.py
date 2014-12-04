@@ -14,8 +14,15 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with bang.  If not, see <http://www.gnu.org/licenses/>.
+
+#: Message queues (e.g. AWS SQS, OpenStack Zaqar)
 QUEUES = 'queues'
+
+#: Object storage (e.g. AWS S3, OpenStack Swift, Google Cloud Storage,
+#: DreamObjects)
 BUCKETS = 'buckets'
+
+
 DATABASE_CREDS = 'database_credentials'
 DATABASE_SECURITY_GROUPS = 'database_security_groups'
 DATABASE_SECURITY_GROUP_RULES = 'database_security_group_rules'
